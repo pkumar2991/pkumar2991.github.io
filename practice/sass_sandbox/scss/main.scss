@@ -1,0 +1,62 @@
+@import "variables";
+@import "functions";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: $light-color;
+    line-height: 1.3;
+    font-family: $font-stack;
+}
+
+header {
+    background: $dark-color;
+    h1 {
+        color: set-dynamic-color($dark-color);
+        text-align: center;
+    }
+}
+
+.section {
+    padding: 3rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    &-a {
+        background: $primary-color;
+    }
+    &-b {
+        background: $secondary-color;
+    }
+}
+
+a {
+    color: #333;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+%btn-shared{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 0.33rem;
+    margin-top: 1rem;
+}
+
+.btn{
+    &-light{
+        @extend %btn-shared;
+        background: $light-color;
+        color: set-dynamic-color($light-color);
+    }
+    &-dark{
+        @extend %btn-shared;
+        background: $dark-color;
+        color: set-dynamic-color($dark-color);
+    }
+}

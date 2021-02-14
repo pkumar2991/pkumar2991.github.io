@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basic</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .flex-container{
+            display: flex;
+            /*
+            flex-direction: row;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse ;
+            */
+            
+            
+
+        }
+        .items{
+            background:#f4f4f4;
+            border: #333 1px solid;
+            border-radius: 5px;
+            text-align: center;
+            margin: 10px;
+            flex: 1 0 100px;
+        }
+        /*.item1{
+            flex-shrink: 0;
+            flex-basis: 0;
+        }
+        .item2{
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+        .item3{
+           flex-grow: 3;
+           flex-basis: 0;
+        }*/
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="items item1">
+            <h1>Box-1</h1>
+        </div>
+        <div class="items item2">
+            <h1>Box-2</h1>
+        </div>
+        <div class="items item3">
+            <h1>Box-3</h1>
+        </div>
+    </div>
+</body>
+</html>

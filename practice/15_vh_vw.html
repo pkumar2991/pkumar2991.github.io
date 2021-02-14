@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViewPort Height | ViewPort width</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        background: #333 url("https://source.unsplash.com/WLUHO9A_xik/1600x900")
+          no-repeat center center/cover;
+        color: #fff;
+        height: 100vh;
+        text-align: center;
+        padding: 4.6rem 0;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        padding-bottom: 0.75rem;
+      }
+
+      header p {
+        margin: 1.5rem 0;
+      }
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        text-decoration: none;
+        background: #fff;
+        color: #333;
+      }
+      @media (max-height: 450px) {
+        header {
+          padding: 6.6rem 1.6rem;
+        }
+        header h1 {
+          font-size: 1.5rem;
+          padding-bottom: 0.5rem;
+        }
+
+        header p {
+          margin: 0.75rem 0;
+        }
+      }
+      #about{
+          padding: 1.6rem 1rem;
+      }
+      #about h1{
+          margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the website</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, nostrum
+        totam doloribus quasi repudiandae beatae.
+      </p>
+      <a href="#" class="btn">Find More</a>
+    </header>
+    <section id="about">
+      <h1>About the company</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        possimus architecto at atque quas, nostrum culpa voluptates porro
+        numquam expedita dolore animi excepturi exercitationem cupiditate,
+        dignissimos illum nihil vero laborum iusto id eveniet, aspernatur labore
+        eius perferendis? Dignissimos ipsum ratione sint, aut temporibus
+        excepturi perspiciatis! Aut minima dignissimos asperiores illo?
+      </p>
+    </section>
+  </body>
+</html>
