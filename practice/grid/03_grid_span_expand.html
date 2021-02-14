@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Span Exand</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .items{
+            background-color: #2a2a;
+            border: #333 1px solid;
+            padding: 3rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            
+        }
+        .items:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 3;
+        }
+        .items:nth-child(9){
+            grid-column: 2 / span 2;
+            grid-row: 3 / span 2;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="items">Item 1</div>
+        <div class="items">Item 2</div>
+        <div class="items">Item 3</div>
+        <div class="items">Item 4</div>
+        <div class="items">Item 5</div>
+        <div class="items">Item 6</div>
+        <div class="items">Item 7</div>
+        <div class="items">Item 8</div>
+        <div class="items">Item 9</div>
+        <div class="items">Item 10</div>
+        <div class="items">Item 11</div>
+        <div class="items">Item 12</div>
+        <div class="items">Item 13</div>
+    </div>
+</body>
+</html>
