@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* overflow: none; */
+    background: #D9DBD5;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.container{
+    height: 100vh;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 0;
+}
+.container::after{
+    content: '';
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 105px;
+    width: 100%;
+    background: #009688;
+    z-index: -1;
+}
+.container .main-content{
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #cac9c9;
+    /* margin-top: -110px; #EDEDED*/
+}
+
+.container .main-content .participant-content{
+    background: #EDEDED;
+    width: 100%;
+    min-height: 100%;
+    border-right: 1px solid #cac9c9;
+    display: flex;
+    flex-direction: column;
+}
+.container .main-content .participant-content .header{
+    background: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    min-height: 62px;
+}
+/* Notifications */
+.container .main-content .participant-content .notification{
+    display: flex;
+    background: #9DE1FE;
+    width: 100%;
+    height: 90px;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.container .main-content .participant-content .notification .bell{
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px;
+}
+
+.container .main-content .participant-content .notification .info{
+    padding: 10px;
+}
+
+.container .main-content .participant-content .notification .info p{
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+.container .main-content .participant-content .notification .info p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container .main-content .participant-content .notification .info a{
+    color: #333;
+    text-decoration: underline;
+}
+.container .main-content .participant-content .notification .info .fas{
+    padding: 0;
+}
+/* Frnds-Panel */
+#frnds-panel{
+    background: #F6F6F6;
+    /* min-height: 100%; */
+}
+/* Search */
+.container .main-content .participant-content .search{
+    display: flex;
+    background: #fff;
+    margin: .5rem 1rem;
+    border-radius: 25px;
+    padding: 5px 0px;
+}
+.container .main-content .participant-content .search input[type='text']{
+   max-width: 100%;
+   border: none;
+}
+/* Friend List */
+.container .main-content .participant-content .friend-list{
+    background: #F5F5F5;
+    min-width: 100%;
+}
+/* Chat Content Panel */
+.container .main-content .chat-content{
+    background: none;
+    width: 100%;
+    height: 100%;
+    background: #E5DDD5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container .main-content .chat-content .chat-header{
+    justify-content: start;
+    background: #EDEDED;
+    min-height: 62px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .main-content .chat-content .chat-header .left{
+    /* padding: 0 1rem; */
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.container .main-content .chat-content .chat-header .right,
+.container .main-content .participant-content .header .right{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    /* padding: 0 2rem; */
+    width: 15%;
+}
+.container .main-content .participant-content .header .right{
+    width: 25%;
+    justify-content: space-between;
+}
+/* Chat message panel */
+.container .main-content .chat-content .chat-area{
+    /* min-height: 100%; */
+}
+/* Chat box */
+.container .main-content .chat-content .chat-box{
+    background: #EDEDED;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+/* Chat input box */
+.container .main-content .chat-content .chat-box input[type=text]{
+    background: #fff;
+    border-radius: 25px;
+    border: none;
+    height: 90%;
+    width: 85%;
+    padding: 10px 10px;
+}
+/* Chat area */
+.container .main-content .chat-content .chat-area{
+    background: #77d0eb;
+    height: 100%;
+}
+/* Font Awesome icons */
+.far, .fas{
+    color: #919191;
+    padding: 5px;
+}
+.chat-box-icons{
+}
