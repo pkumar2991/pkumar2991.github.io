@@ -49,7 +49,7 @@ btnRoll.addEventListener('click',()=>{
 btnHold.addEventListener('click',()=>{
     scores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
-    if(scores[activePlayer] >= 10){
+    if(scores[activePlayer] >= 100){
         currentScore = 0;
         document.getElementById(`current--${activePlayer}`).textContent = currentScore;
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
