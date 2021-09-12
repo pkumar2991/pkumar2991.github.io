@@ -71,6 +71,7 @@ btnNew.addEventListener('click',()=>{
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
     document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner');
     activePlayer = 0;
+    document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
     document.querySelector(`.player--${activePlayer}`).classList.add('player--active');
     document.querySelector('.modal').classList.add('hidden');
     document.querySelector('.overlay').classList.add('hidden');
