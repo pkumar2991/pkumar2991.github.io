@@ -211,6 +211,7 @@ main {
   color: white;
   z-index: 1;
   line-height: 5px;
+  cursor: pointer;
 }
 .overlay{
   position: absolute;
