@@ -57,6 +57,8 @@ btnHold.addEventListener('click',()=>{
         dice.classList.add('hidden');
         btnRoll.disabled = true;
         btnHold.disabled = true;
+        let playerName = activePlayer === 0 ? 'Player 1' : 'Player 2';
+        document.querySelector('.message').textContent=`💥Hurray! ${playerName} won the game! 🎉`;
         document.querySelector('.modal').classList.remove('hidden');
         document.querySelector('.overlay').classList.remove('hidden');
     }else{
