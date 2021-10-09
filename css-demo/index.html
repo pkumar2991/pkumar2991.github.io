@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        *, :after, :before {
-            box-sizing: border-box;
-            outline: none;
-        }
-        .bookmark{
-            margin: auto;
-            width: 0;
-            height: 80px;
-            background-color: white;
-            border-top: 60px solid red;
-            border-right: 60px solid red;
-            border-bottom: 60px solid transparent;
-            border-left: 60px solid red;
-        }
-        .advBtn{
-            margin: 1rem;
-            padding: 1rem;
-            border: 1px solid orangered;
-            background: white;
-            color: #333;
-            position: relative;
-        }
-        .advBtn::after{
-            content: '';
-            position: absolute;
-            background-color: orangered;
-            display: block;
-            z-index: 10;
-        }
-        .advBtn::before{
-            content: '';
-            background: orangered;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            transform: scale(0);
-            display: block;
-            width: 100%;
-            transition: step-start 200ms;
-            z-index: 1;
-        }
-        .advBtn:hover::before{
-            transform: scale(1);
-            opacity: 0.5;
-        }
-    </style>
-</head>
-<body>
-    <div class="bookmark"></div>
-    <div >
-        <button class="advBtn">Register</button>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand">
+        <img class="logo" src="./assets/logo.jpg" alt="" class="logo" />
+        <p>Awesome CSS In Action</p>
+      </div>
+
+      <div class="menu">
+        <a href="">Button Style</a>
+        <a href="">Flex</a>
+        <a href="">Miscellaneous</a>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- Sections -->
+      <section class="sectionRow start-left">
+        <div class="output">
+          <div class="bookmark"></div>
+        </div>
+        <div class="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+          maiores pariatur illum beatae deserunt accusantium ipsum veniam,
+          necessitatibus itaque repellendus earum odit recusandae provident
+          dolores rem magni tenetur! Obcaecati magni, eaque culpa cum dolor
+          fugit! Aperiam itaque aliquam neque, molestiae expedita molestias
+          quibusdam excepturi, ipsa exercitationem porro quaerat, harum
+          nesciunt.
+        </div>
+      </section>
+      <section class="sectionRow start-right">
+        <div class="output">
+          <button class="btn btnhover">
+            Hover Me!
+          </button>
+        </div>
+        <div class="description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+          maiores pariatur illum beatae deserunt accusantium ipsum veniam,
+          necessitatibus itaque repellendus earum odit recusandae provident
+          dolores rem magni tenetur! Obcaecati magni, eaque culpa cum dolor
+          fugit! Aperiam itaque aliquam neque, molestiae expedita molestias
+          quibusdam excepturi, ipsa exercitationem porro quaerat, harum
+          nesciunt.
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
