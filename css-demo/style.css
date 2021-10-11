@@ -113,6 +113,10 @@ a{
     margin-left: 15px;
     flex: 3;
 }
+.sectionRow .description a{
+    text-decoration: underline;
+    color : orangered;
+}
 /* bookmark */
 .bookmark{
     width: 0;
