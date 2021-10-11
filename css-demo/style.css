@@ -79,9 +79,10 @@ a{
 
 /* Container */
 .container{
-    margin: 10px;
+    margin: auto;
+    width: 900px;
     height: 100vh;
-   
+    background: white;
 }
 
 /* Section Row */
@@ -89,7 +90,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: start;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0.5rem 1rem 1rem 1rem;
     min-height: 150px;
 }
 .start-right{
